@@ -5,7 +5,9 @@ export const metadata = {
 export default function AboutUs() {
   return (
     <div>
-      <h2>ABOUT us!!!</h2>
+      <h1>About us!</h1>
     </div>
   );
 }
+
+export const runtime = "edge";

@@ -6,8 +6,8 @@ interface IParams {
   params: { id: string };
 }
 
-export async function generateMetadata({ params: { id } }: IParams) {
-  const movie = await getMovie(id);
+export async function generateMetadata({ params }: { params: { id: string } }) {
+  const movie = await getMovie(params.id);
   return {
     title: movie.title,
   };
